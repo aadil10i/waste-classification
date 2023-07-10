@@ -8,10 +8,9 @@ const int buttonPin = A2;
 // defines variables
 long duration;
 int distance;
-Servo myservo;  // create servo object to control a servo
-// twelve servo objects can be created on most boards
+Servo myservo;
 
-int pos = 90;    // variable to store the servo position
+int pos = 90;    
 int isFull = false;
 int thres = 16;
 int timer = 0;
@@ -69,64 +68,64 @@ void loop() {
     }                 
   }
   
-//   if(digitalRead(buttonPin) == HIGH) {
-//     Serial.println('x');
+  if(digitalRead(buttonPin) == HIGH) {
+    Serial.println('x');
 
-//     while(Serial.available() == 0) {
-//       continue;
-//     }
+    while(Serial.available() == 0) {
+      continue;
+    }
 
-//     char x = Serial.read();
+    char x = Serial.read();
 
-//     if(x == 'u') {
-//       for (int deg = pos; deg <= 180; deg++) {
-//         myservo.write(deg);
-//         pos = deg;
-//         delay(10);
-//       } 
-//       for (int deg = pos; deg >= 90; deg--) {
-//         myservo.write(deg);
-//         pos = deg;
-//         delay(10);
-//       }
-//     }
-//     else if(x == 'd') {
-//       for (int deg = pos; deg >= 45; deg--) {
-//         myservo.write(deg);
-//         pos = deg;
-//         delay(10);
-//       } 
-//       for (int deg = pos; deg <= 90; deg++) {
-//         myservo.write(deg);
-//         pos = deg;
-//         delay(10); 
-//       }
-//     }
-//   }
+    if(x == 'u') {
+      for (int deg = pos; deg <= 180; deg++) {
+        myservo.write(deg);
+        pos = deg;
+        delay(10);
+      } 
+      for (int deg = pos; deg >= 90; deg--) {
+        myservo.write(deg);
+        pos = deg;
+        delay(10);
+      }
+    }
+    else if(x == 'd') {
+      for (int deg = pos; deg >= 45; deg--) {
+        myservo.write(deg);
+        pos = deg;
+        delay(10);
+      } 
+      for (int deg = pos; deg <= 90; deg++) {
+        myservo.write(deg);
+        pos = deg;
+        delay(10); 
+      }
+    }
+  }
   
-//   if(Serial.available() > 0) {
-//     char instruction = Serial.read();
+  if(Serial.available() > 0) {
+    char instruction = Serial.read();
 
-//     if(instruction == '0') {
-//       for (int deg = pos; deg >= 0; deg--) {
-//         myservo.write(deg);
-//         pos = deg;
-//         delay(10);
-//       }        
-//     }
-//     else if(instruction == '1') {
-//       for (int deg = pos; deg <= 90; deg++) {
-//         myservo.write(deg);
-//         pos = deg;
-//         delay(10);
-//       } 
-//     }
-//     else if(instruction == '2') {
-//       for (int deg = pos; deg <= 180; deg++) {
-//         myservo.write(deg);
-//         pos = deg;
-//         delay(10);
-//       } 
-//     }
-//   }                
-// }
+    if(instruction == '0') {
+      for (int deg = pos; deg >= 0; deg--) {
+        myservo.write(deg);
+        pos = deg;
+        delay(10);
+      }        
+    }
+    else if(instruction == '1') {
+      for (int deg = pos; deg <= 90; deg++) {
+        myservo.write(deg);
+        pos = deg;
+        delay(10);
+      } 
+    }
+    else if(instruction == '2') {
+      for (int deg = pos; deg <= 180; deg++) {
+        myservo.write(deg);
+        pos = deg;
+        delay(10);
+      } 
+    }
+  }                
+}
