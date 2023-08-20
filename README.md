@@ -18,16 +18,17 @@ An Arduino board controls the hardware including a servo motor to move the bin l
 - Arduino UNO
 
 # Features
-# Camera
+## Camera
 Used a phone's camera to capture images of waste items, but a small camera would have been more suitable.
 
-# Sensor
+## Sensor
 An ultrasonic sensor, to detect when the bin is full.
+![Ultrasonic](20230228_235603.jpg) 
 
 # Demo
 ## An organic waste being disposed into the organic compartment.
-
+![Demo](Picture1.gif) 
 
 # Acknowledgments
-
+[Image Dataset](https://www.kaggle.com/datasets/techsash/waste-classification-data)
 
