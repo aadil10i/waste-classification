@@ -24,7 +24,7 @@ Used a phone's camera to capture images of waste items, but a small camera would
 An ultrasonic sensor, to detect when the bin is full.
 
 # Demo
-# An organic waste being disposed into the organic compartment.
+## An organic waste being disposed into the organic compartment.
 
 
 # Acknowledgments
