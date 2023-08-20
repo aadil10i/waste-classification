@@ -26,7 +26,7 @@ An ultrasonic sensor, to detect when the bin is full.
 ![Ultrasonic](20230228_235603.jpg) 
 
 # Demo
-## An organic waste being disposed into the organic compartment.
+Organic waste being disposed into the organic compartment.
 ![Demo](Picture1.gif) 
 
 # Acknowledgments
