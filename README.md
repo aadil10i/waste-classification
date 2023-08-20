@@ -8,6 +8,7 @@ A smart waste segregation system that can automatically classify waste items int
 An Arduino board controls the hardware including a servo motor to move the bin lid and an ultrasonic sensor to detect when the bin is full. Python program handles the computer vision and machine learning tasks and communicates with the Arduino over serial communication.
 
 ![Schematic](Picture3.png)
+![Arduino](20230201_094521.jpg)
 
 # Built with
 - Python
